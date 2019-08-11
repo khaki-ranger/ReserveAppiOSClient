@@ -12,7 +12,7 @@ import Foundation
 struct Office: Codable {
     var id: String
     var name: String
-    var img: String
+    var img: String?
     var spaceList: [Space]
     
     private enum CodingKeys: String, CodingKey {
