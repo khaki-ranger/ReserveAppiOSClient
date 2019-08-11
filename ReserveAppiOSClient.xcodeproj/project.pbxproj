@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		D10C71BD22FFF5D900D8C52C /* OfficeTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = D10C71BC22FFF5D900D8C52C /* OfficeTableViewCell.swift */; };
 		D1A76A9A22FEA5D600724AE9 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D1A76A9922FEA5D600724AE9 /* AppDelegate.swift */; };
 		D1A76A9C22FEA5D600724AE9 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D1A76A9B22FEA5D600724AE9 /* ViewController.swift */; };
 		D1A76A9F22FEA5D600724AE9 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D1A76A9D22FEA5D600724AE9 /* Main.storyboard */; };
@@ -16,6 +17,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		D10C71BC22FFF5D900D8C52C /* OfficeTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OfficeTableViewCell.swift; sourceTree = "<group>"; };
 		D1A76A9622FEA5D500724AE9 /* ReserveAppiOSClient.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ReserveAppiOSClient.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		D1A76A9922FEA5D600724AE9 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		D1A76A9B22FEA5D600724AE9 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -59,6 +61,7 @@
 				D1A76A9922FEA5D600724AE9 /* AppDelegate.swift */,
 				D1EA92A922FECDB500217CC4 /* ResultDataSet.swift */,
 				D1A76A9B22FEA5D600724AE9 /* ViewController.swift */,
+				D10C71BC22FFF5D900D8C52C /* OfficeTableViewCell.swift */,
 				D1A76A9D22FEA5D600724AE9 /* Main.storyboard */,
 				D1A76AA022FEA5D800724AE9 /* Assets.xcassets */,
 				D1A76AA222FEA5D800724AE9 /* LaunchScreen.storyboard */,
@@ -141,6 +144,7 @@
 				D1A76A9C22FEA5D600724AE9 /* ViewController.swift in Sources */,
 				D1EA92AA22FECDB500217CC4 /* ResultDataSet.swift in Sources */,
 				D1A76A9A22FEA5D600724AE9 /* AppDelegate.swift in Sources */,
+				D10C71BD22FFF5D900D8C52C /* OfficeTableViewCell.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

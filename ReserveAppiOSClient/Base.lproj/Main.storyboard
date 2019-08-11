@@ -26,7 +26,7 @@
                             </connections>
                         </searchBar>
                         <prototypes>
-                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" accessoryType="disclosureIndicator" indentationWidth="10" id="opB-Qn-9Hu">
+                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" accessoryType="disclosureIndicator" indentationWidth="10" reuseIdentifier="officeCell" id="opB-Qn-9Hu" customClass="OfficeTableViewCell" customModule="ReserveAppiOSClient" customModuleProvider="target">
                                 <rect key="frame" x="0.0" y="72" width="375" height="120"/>
                                 <autoresizingMask key="autoresizingMask"/>
                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="opB-Qn-9Hu" id="0U8-yr-LFU">
@@ -40,7 +40,7 @@
                                                 <constraint firstAttribute="width" constant="100" id="l6Z-sm-PZD"/>
                                             </constraints>
                                         </imageView>
-                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="すごく長い支店名" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="6Rn-Si-3XA">
+                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="支店名" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="6Rn-Si-3XA">
                                             <rect key="frame" x="118" y="50" width="215" height="20.5"/>
                                             <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                             <nil key="textColor"/>
@@ -55,6 +55,10 @@
                                         <constraint firstAttribute="trailing" secondItem="6Rn-Si-3XA" secondAttribute="trailing" constant="8" id="i71-FS-mcp"/>
                                     </constraints>
                                 </tableViewCellContentView>
+                                <connections>
+                                    <outlet property="officeImageView" destination="qOj-sh-7qx" id="xpo-P0-F3R"/>
+                                    <outlet property="officeNameLabel" destination="6Rn-Si-3XA" id="iww-70-dGh"/>
+                                </connections>
                             </tableViewCell>
                         </prototypes>
                         <connections>
