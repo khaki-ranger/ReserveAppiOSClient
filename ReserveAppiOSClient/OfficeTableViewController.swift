@@ -69,7 +69,6 @@ class OfficeTableViewController: UITableViewController {
                 let result = try JSONDecoder().decode([Office].self, from: data)
                 // リストに追加
                 self.officeList.append(contentsOf: result)
-                print("## success!\n\(self.officeList)")
             } catch let error {
                 print("## error!\n\(error)")
             }
