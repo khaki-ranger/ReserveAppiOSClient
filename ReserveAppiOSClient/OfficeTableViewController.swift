@@ -73,6 +73,11 @@ class OfficeTableViewController: UITableViewController {
             } catch let error {
                 print("## error!\n\(error)")
             }
+            
+            // テーブルの描画処理を実施
+            DispatchQueue.main.async {
+                self.tableView.reloadData()
+            }
         }
         
         // 通信開始
@@ -98,7 +103,7 @@ class OfficeTableViewController: UITableViewController {
         return officeList.count
     }
 
-    // セクション内のオフィスの数を取得
+    // セルの設定
     override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         guard let cell = tableView.dequeueReusableCell(withIdentifier: "officeCell", for: indexPath) as? OfficeTableViewCell else {
             return UITableViewCell()
@@ -119,16 +124,16 @@ class OfficeTableViewController: UITableViewController {
         }
         
         // 画像パスが相対パスだった場合、絶対パスに変換する処理
-        // これから実装する
+        let imgPath = officeImageUrl.contains("https") ? officeImageUrl : baseUrl + officeImageUrl
         
         // キャッシュの画像を取り出す
-        if let cacheImage = imageCache.object(forKey: officeImageUrl as AnyObject) {
+        if let cacheImage = imageCache.object(forKey: imgPath as AnyObject) {
             // キャッシュの画像を設定
             cell.officeImageView.image = cacheImage
             return cell
         }
         // キャッシュの画像がないためダウンロードする
-        guard let url = URL(string: officeImageUrl) else {
+        guard let url = URL(string: imgPath) else {
             // urlが生成できなかった
             return cell
         }
@@ -149,7 +154,7 @@ class OfficeTableViewController: UITableViewController {
                 return
             }
             // ダウンロードした画像をキャッシュに登録しておく
-            self.imageCache.setObject(image, forKey: officeImageUrl as AnyObject)
+            self.imageCache.setObject(image, forKey: imgPath as AnyObject)
             // 画像はメインスレッド上で設定する
             DispatchQueue.main.async {
                 cell.officeImageView.image = image
