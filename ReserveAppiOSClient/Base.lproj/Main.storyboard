@@ -6,6 +6,7 @@
     <dependencies>
         <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14088"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
@@ -58,6 +59,7 @@
                                 <connections>
                                     <outlet property="officeImageView" destination="qOj-sh-7qx" id="xpo-P0-F3R"/>
                                     <outlet property="officeNameLabel" destination="6Rn-Si-3XA" id="iww-70-dGh"/>
+                                    <segue destination="NP2-PD-OoK" kind="show" id="Vq9-06-aUr"/>
                                 </connections>
                             </tableViewCell>
                         </prototypes>
@@ -70,7 +72,47 @@
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="cZP-XM-Vq0" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1058.4000000000001" y="76.911544227886068"/>
+            <point key="canvasLocation" x="953" y="77"/>
+        </scene>
+        <!--Table View Controller-->
+        <scene sceneID="Pmf-3z-RbV">
+            <objects>
+                <tableViewController id="NP2-PD-OoK" sceneMemberID="viewController">
+                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" id="05h-ZD-MGN">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <prototypes>
+                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" accessoryType="disclosureIndicator" indentationWidth="10" reuseIdentifier="spaceCell" id="ZMz-Lg-N4Q">
+                                <rect key="frame" x="0.0" y="28" width="375" height="44"/>
+                                <autoresizingMask key="autoresizingMask"/>
+                                <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="ZMz-Lg-N4Q" id="Zb2-nC-aeH">
+                                    <rect key="frame" x="0.0" y="0.0" width="341" height="43.5"/>
+                                    <autoresizingMask key="autoresizingMask"/>
+                                    <subviews>
+                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="スペース名" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="CS3-N8-PbR">
+                                            <rect key="frame" x="16" y="11" width="87" height="21"/>
+                                            <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                            <nil key="textColor"/>
+                                            <nil key="highlightedColor"/>
+                                        </label>
+                                    </subviews>
+                                    <constraints>
+                                        <constraint firstItem="CS3-N8-PbR" firstAttribute="centerY" secondItem="Zb2-nC-aeH" secondAttribute="centerY" id="UR5-zy-cG9"/>
+                                        <constraint firstItem="CS3-N8-PbR" firstAttribute="leading" secondItem="Zb2-nC-aeH" secondAttribute="leadingMargin" id="aqQ-3C-1te"/>
+                                    </constraints>
+                                </tableViewCellContentView>
+                            </tableViewCell>
+                        </prototypes>
+                        <connections>
+                            <outlet property="dataSource" destination="NP2-PD-OoK" id="faA-3W-Djp"/>
+                            <outlet property="delegate" destination="NP2-PD-OoK" id="K22-zG-p24"/>
+                        </connections>
+                    </tableView>
+                </tableViewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="9Bf-de-t16" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1775" y="77"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="NdM-3T-3gF">
