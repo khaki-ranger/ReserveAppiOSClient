@@ -113,6 +113,8 @@ class OfficeTableViewController: UITableViewController {
         
         // オフィスの名前を設定
         cell.officeNameLabel.text = officeData.name
+        // オフィスに所属するスペースの情報を設定
+        cell.spaceList = officeData.spaceList
         
         // オフィスのサムネイル画像を設定
         // すでにセルに設定されている画像と同じかどうかチェックする
@@ -164,6 +166,18 @@ class OfficeTableViewController: UITableViewController {
         task.resume()
 
         return cell
+    }
+    
+    // オフィスのセルをタップして次の画面に遷移する前の処理
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        if let cell = sender as? OfficeTableViewCell {
+            if let spaceTableViewController = segue.destination as? SpaceTableViewController {
+                // オフィスに所属するスペース一覧の情報を設定する
+                spaceTableViewController.spaceList = cell.spaceList
+                // オフィス名を設定する
+                spaceTableViewController.officename = cell.officeNameLabel.text
+            }
+        }
     }
 
     /*

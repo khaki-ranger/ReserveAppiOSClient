@@ -74,10 +74,10 @@
             </objects>
             <point key="canvasLocation" x="953" y="77"/>
         </scene>
-        <!--Table View Controller-->
+        <!--Space Table View Controller-->
         <scene sceneID="Pmf-3z-RbV">
             <objects>
-                <tableViewController id="NP2-PD-OoK" sceneMemberID="viewController">
+                <tableViewController id="NP2-PD-OoK" customClass="SpaceTableViewController" customModule="ReserveAppiOSClient" customModuleProvider="target" sceneMemberID="viewController">
                     <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" id="05h-ZD-MGN">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
