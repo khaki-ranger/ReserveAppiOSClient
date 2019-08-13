@@ -10,6 +10,7 @@
 		D10C71BD22FFF5D900D8C52C /* OfficeTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = D10C71BC22FFF5D900D8C52C /* OfficeTableViewCell.swift */; };
 		D10C71BF22FFF9ED00D8C52C /* OfficeTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D10C71BE22FFF9ED00D8C52C /* OfficeTableViewController.swift */; };
 		D150E6D823015E0100F227DF /* SpaceTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D150E6D723015E0100F227DF /* SpaceTableViewController.swift */; };
+		D196B2E123029AD60027FF89 /* SpaceViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D196B2E023029AD60027FF89 /* SpaceViewController.swift */; };
 		D1A76A9A22FEA5D600724AE9 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D1A76A9922FEA5D600724AE9 /* AppDelegate.swift */; };
 		D1A76A9F22FEA5D600724AE9 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D1A76A9D22FEA5D600724AE9 /* Main.storyboard */; };
 		D1A76AA122FEA5D800724AE9 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D1A76AA022FEA5D800724AE9 /* Assets.xcassets */; };
@@ -24,6 +25,7 @@
 		D10C71BC22FFF5D900D8C52C /* OfficeTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OfficeTableViewCell.swift; sourceTree = "<group>"; };
 		D10C71BE22FFF9ED00D8C52C /* OfficeTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OfficeTableViewController.swift; sourceTree = "<group>"; };
 		D150E6D723015E0100F227DF /* SpaceTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SpaceTableViewController.swift; sourceTree = "<group>"; };
+		D196B2E023029AD60027FF89 /* SpaceViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SpaceViewController.swift; sourceTree = "<group>"; };
 		D1A76A9622FEA5D500724AE9 /* ReserveAppiOSClient.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ReserveAppiOSClient.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		D1A76A9922FEA5D600724AE9 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		D1A76A9E22FEA5D600724AE9 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
@@ -74,6 +76,7 @@
 				D10C71BE22FFF9ED00D8C52C /* OfficeTableViewController.swift */,
 				D1C7E55A230256950047D1C2 /* SpaceTableViewCell.swift */,
 				D150E6D723015E0100F227DF /* SpaceTableViewController.swift */,
+				D196B2E023029AD60027FF89 /* SpaceViewController.swift */,
 				D1A76A9D22FEA5D600724AE9 /* Main.storyboard */,
 				D1A76AA022FEA5D800724AE9 /* Assets.xcassets */,
 				D1A76AA222FEA5D800724AE9 /* LaunchScreen.storyboard */,
@@ -159,6 +162,7 @@
 				D1EA92AA22FECDB500217CC4 /* ResultDataSet.swift in Sources */,
 				D1A76A9A22FEA5D600724AE9 /* AppDelegate.swift in Sources */,
 				D1C7E55F23025CC00047D1C2 /* UIColorHex.swift in Sources */,
+				D196B2E123029AD60027FF89 /* SpaceViewController.swift in Sources */,
 				D1C7E55B230256950047D1C2 /* SpaceTableViewCell.swift in Sources */,
 				D10C71BD22FFF5D900D8C52C /* OfficeTableViewCell.swift in Sources */,
 			);

@@ -13,6 +13,10 @@ class SpaceTableViewCell: UITableViewCell {
     // スペース名
     @IBOutlet weak var spaceNameLabel: UILabel!
     
+    // スペースの情報
+    // 遷移先の画面で利用する
+    var spaceData:Space?
+    
     override func awakeFromNib() {
         super.awakeFromNib()
         // Initialization code
