@@ -113,6 +113,7 @@ class OfficeTableViewController: UITableViewController {
         
         // オフィスの名前を設定
         cell.officeNameLabel.text = officeData.name
+        
         // オフィスに所属するスペースの情報を設定
         cell.spaceList = officeData.spaceList
         

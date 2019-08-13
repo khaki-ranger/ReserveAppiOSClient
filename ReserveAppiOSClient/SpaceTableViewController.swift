@@ -38,13 +38,19 @@ class SpaceTableViewController: UITableViewController {
 
     override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         // #warning Incomplete implementation, return the number of rows
-        return 1
+        return spaceList.count
     }
 
     override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        let cell = tableView.dequeueReusableCell(withIdentifier: "spaceCell", for: indexPath)
-
-        // Configure the cell...
+        guard let cell = tableView.dequeueReusableCell(withIdentifier: "spaceCell", for: indexPath) as? SpaceTableViewCell else {
+            return UITableViewCell()
+        }
+        
+        // スペースのデータを取得
+        let spaceData = spaceList[indexPath.row]
+        
+        // スペースの名前を設定
+        cell.spaceNameLabel.text = spaceData.name
 
         return cell
     }
