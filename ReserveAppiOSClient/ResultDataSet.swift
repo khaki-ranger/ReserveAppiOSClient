@@ -37,7 +37,7 @@ struct Space: Codable {
 }
 
 // スペースの空き状況のデータを表現するクラス
-class Reservations: Codable {
+class Reservation: Codable {
     var periods: [Period] = [Period]()
     
     required init(from decoder: Decoder) throws {
